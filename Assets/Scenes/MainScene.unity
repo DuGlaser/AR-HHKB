@@ -148,11 +148,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 420996454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f07ca66ce5514fb7a26ab1e51e9bfec, type: 3}
+  m_Script: {fileID: 11500000, guid: c80668ed8694542ad8a58e487d8d6f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ReferenceLibrary: {fileID: 11400000, guid: 5ac486e6094304756b870c44c12a1ef6, type: 2}
-  m_TrackedObjectPrefab: {fileID: 6500664603173753809, guid: 9f9f8f5e00ccb4e45b214285be9640d1,
+  xRReferenceObjectLibrary: {fileID: 11400000, guid: 5ac486e6094304756b870c44c12a1ef6,
+    type: 2}
+  prefabOnTrack: {fileID: 6500664603173753809, guid: 9f9f8f5e00ccb4e45b214285be9640d1,
     type: 3}
 --- !u!114 &420996456
 MonoBehaviour:
