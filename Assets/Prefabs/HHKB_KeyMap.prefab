@@ -3456,7 +3456,7 @@ PrefabInstance:
     - target: {fileID: 1767903140477128879, guid: e300cc0a6f84943beb2d11f22c419cef,
         type: 3}
       propertyPath: m_Name
-      value: RIghtAlt
+      value: RightAlt
       objectReference: {fileID: 0}
     - target: {fileID: 3754291354118121850, guid: e300cc0a6f84943beb2d11f22c419cef,
         type: 3}
