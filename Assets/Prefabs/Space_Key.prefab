@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8703434890902039207}
   - component: {fileID: 8438733686355758067}
   - component: {fileID: 2608581880143923815}
+  - component: {fileID: 582194503228790427}
   m_Layer: 5
   m_Name: Space_Key
   m_TagString: Untagged
@@ -76,6 +77,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &582194503228790427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078163473573663602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685dccf5dcd35494b83576c034369740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyBottomPos: 0.05
+  keyDefaultPos: 0.075
+  defaultColor: {r: 0.5372549, g: 0.972549, b: 0.9529412, a: 1}
+  highlightColor: {r: 0.972549, g: 0.73333335, b: 0.5372549, a: 1}
+  isPushed: 0
 --- !u!1 &6565806590375463767
 GameObject:
   m_ObjectHideFlags: 0

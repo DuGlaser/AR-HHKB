@@ -5,6 +5,15 @@ using UnityEngine;
 
 public class KeyboardController : MonoBehaviour
 {
+    [SerializeField]
+    private float keyBottomPos = 0f;
+
+    [SerializeField]
+    private float keyDefaultPos = 0.075f;
+
+    private float currentVelocity;
+
+
     private Dictionary<KeyCode, GameObject> KeyTable = new Dictionary<KeyCode, GameObject>();
 
     void Start()
@@ -29,17 +38,25 @@ public class KeyboardController : MonoBehaviour
 
     void Update()
     {
-        if (Input.anyKeyDown)
+        foreach (var code in KeyTable)
         {
-            foreach (var code in KeyTable)
+            if (Input.GetKeyDown(code.Key))
             {
-                if (Input.GetKeyDown(code.Key))
+                GameObject obj = code.Value;
+                if (obj != null)
                 {
-                    GameObject obj = code.Value;
-                    if (obj != null)
-                    {
-                        obj.SetActive(false);
-                    }
+                    KeyController keyController = obj.GetComponent<KeyController>();
+                    keyController.isPushed = true;
+                }
+            }
+
+            if (Input.GetKeyUp(code.Key))
+            {
+                GameObject obj = code.Value;
+                if (obj != null)
+                {
+                    KeyController keyController = obj.GetComponent<KeyController>();
+                    keyController.isPushed = false;
                 }
             }
         }
