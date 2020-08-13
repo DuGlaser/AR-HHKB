@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.14084, y: 0.075}
+  m_AnchoredPosition: {x: -0.14084, y: 0}
   m_SizeDelta: {x: 0.017, y: 0.017}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4165060409581668398
@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 685dccf5dcd35494b83576c034369740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyBottomPos: 0.05
-  keyDefaultPos: 0.075
+  keyStroke: 0.02
+  keyDefaultPos: 0
   defaultColor: {r: 0.5372549, g: 0.972549, b: 0.9529412, a: 1}
   highlightColor: {r: 0.972549, g: 0.73333335, b: 0.5372549, a: 1}
   isPushed: 0
