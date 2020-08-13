@@ -5,18 +5,12 @@ using UnityEngine;
 
 public class KeyboardController : MonoBehaviour
 {
-    [SerializeField]
-    private float keyBottomPos = 0f;
-
-    [SerializeField]
-    private float keyDefaultPos = 0.075f;
-
     private float currentVelocity;
 
 
     private Dictionary<KeyCode, GameObject> KeyTable = new Dictionary<KeyCode, GameObject>();
 
-    void Start()
+    void Awake()
     {
         foreach (KeyCode code in Enum.GetValues(typeof(KeyCode)))
         {

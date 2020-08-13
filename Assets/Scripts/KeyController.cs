@@ -8,10 +8,10 @@ using TMPro;
 public class KeyController : MonoBehaviour
 {
     [SerializeField]
-    private float keyBottomPos = 0.05f;
+    private float keyStroke = 0.02f;
 
-    [SerializeField]
-    private float keyDefaultPos = 0.075f;
+    private float keyDefaultPos;
+    private float keyBottomPos;
 
     [SerializeField]
     private Color defaultColor = new Color(137.0f / 255.0f, 248.0f / 255.0f, 243f / 255.0f, 1f);
@@ -21,6 +21,12 @@ public class KeyController : MonoBehaviour
 
     public bool isPushed = false;
     private float speed = 12.0f;
+
+    void Start()
+    {
+        keyDefaultPos = this.transform.position.y;
+        keyBottomPos = keyDefaultPos - keyStroke;
+    }
 
     void Update()
     {
