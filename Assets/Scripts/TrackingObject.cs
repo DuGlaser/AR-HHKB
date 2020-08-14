@@ -12,10 +12,12 @@ public class TrackingObject : MonoBehaviour
     [SerializeField]
     private GameObject prefabOnTrack;
 
-    [SerializeField]
-    private GameObject navigatorUI;
+    public GameObject navigatorUI;
 
     private ARTrackedObjectManager trackedObjectManager;
+
+    public static TrackingObject instance;
+    void Awake() { instance = this; }
 
     void Start()
     {
@@ -27,14 +29,6 @@ public class TrackingObject : MonoBehaviour
 
         trackedObjectManager.enabled = true;
         /* trackedObjectManager.trackedObjectsChanged += OnTrackedObjectChanged; */
-    }
-
-    void Update()
-    {
-        /* if (trackedObjectManager.isActiveAndEnabled) */
-        /* { */
-        /*     navigatorUI.SetActive(false); */
-        /* } */
     }
 
     /* private void OnTrackedObjectChanged(ARTrackedObjectsChangedEventArgs eventArgs) */
