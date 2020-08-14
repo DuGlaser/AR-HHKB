@@ -30,6 +30,16 @@ public class KeyboardController : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        TrackingObject.instance.navigatorUI.SetActive(false);
+    }
+
+    void OnDisable()
+    {
+        TrackingObject.instance.navigatorUI.SetActive(true);
+    }
+
     void Update()
     {
         foreach (var code in KeyTable)
