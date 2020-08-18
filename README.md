@@ -2,6 +2,8 @@
 無刻印HHKBの配列をARでわかりやすく表現  
 
 ![demo](https://user-images.githubusercontent.com/50506482/90257849-a98e2000-de82-11ea-983e-a435b23f6054.gif)
+
+> 動画のフルバージョン: https://twitter.com/dameganeo/status/1294252868187324416
 ## Description
 UnityのAR FoundationのObject Trackingを使いHHKBを認識させ、その上にキー配列を表示しています
 
